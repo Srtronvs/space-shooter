@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="background"></canvas>
+        <div class="score">Puntuación: <span id="score">0</span></div>
+    </div>
+    <div class="controls">
+        <button id="move-left">←</button>
+        <button id="shoot">Disparar</button>
+        <button id="move-right">→</button>
+    </div>
+
+    <!-- Ventana modal de Game Over -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <p>Puntuación: <span id="final-score">0</span></p>
+            <button id="restart-button">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Elementos de audio -->
+    <audio id="background-music" loop>
+        <source src="{{ url_for('static', filename='sounds/music.mp3') }}" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <audio id="rock-destroyed-sound">
+        <source src="{{ url_for('static', filename='sounds/sound.mp3') }}" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <audio id="shoot-sound">
+        <source src="{{ url_for('static', filename='sounds/disparo.mp3') }}" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

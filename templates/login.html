@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Space Shooter</h1>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="wallet-address">Wallet Address:</label>
+                <input type="text" id="wallet-address" name="wallet_address" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p id="message"></p>
+            <button id="register-button" class="secondary-button">Registrarse</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>
