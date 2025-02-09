@@ -1,0 +1,9 @@
+pyTelegramBotAPI
+
+apscheduler
+
+requests
+
+pymongo
+
+pycoingecko
