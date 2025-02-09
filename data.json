@@ -1,0 +1,18 @@
+{
+    "users": {
+        "212123": {
+            "code": "DEFE90",
+            "referrals": [],
+            "points": 0
+        },
+        "saad": {
+            "code": "EC3656",
+            "referrals": [],
+            "points": 34
+        }
+    },
+    "codes": {
+        "DEFE90": "212123",
+        "EC3656": "saad"
+    }
+}
