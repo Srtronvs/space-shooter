@@ -1,9 +1,1 @@
-pyTelegramBotAPI
-
-apscheduler
-
-requests
-
-pymongo
-
-pycoingecko
+Flask
