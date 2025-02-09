@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, render_template, redirect, url_for
 from base import load_data, register_user, get_user, update_points
-
+import os
 app = Flask(__name__)
-
+port = int(os.environ.get('PORT', 8080))
 # Ruta principal (registro)
 @app.route("/")
 def index():
@@ -56,5 +56,4 @@ def game():
     return render_template("game.html")
 
 if __name__ == '__main__':
-    # Ejecutar el servidor en la red local
-    app.run(host='0.0.0.0', port=5000, debug=True)
+  app.run(host='0.0.0.0', port=port)
